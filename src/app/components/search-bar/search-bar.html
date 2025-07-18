@@ -1,0 +1,10 @@
+<div class="search-bar">
+  <input type="text" name="search" placeholder="Search ..." />
+  <button type="submit" (click)="getPokemonByName('Charizard')">🔍</button>
+</div>
+<pre *ngIf="data">{{ data | json }}</pre>
+<img
+  *ngIf="data?.sprites?.front_default"
+  [src]="data.sprites.front_default"
+  alt="Pokemon Image"
+/>

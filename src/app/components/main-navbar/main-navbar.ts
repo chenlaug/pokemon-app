@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ROUTE_TYPE } from '../../interface/routeType.interface';
 import { SecondaryNavbar } from '../secondary-navbar/secondary-navbar';
 
 @Component({
@@ -10,7 +11,7 @@ import { SecondaryNavbar } from '../secondary-navbar/secondary-navbar';
   styleUrl: './main-navbar.css',
 })
 export class MainNavbar {
-  routerlink: { id: number; path: string; name: string }[] = [
+  routerlink: ROUTE_TYPE[] = [
     { id: 1, name: 'Home', path: 'home' },
     { id: 2, name: 'About Me', path: 'about' },
   ];
