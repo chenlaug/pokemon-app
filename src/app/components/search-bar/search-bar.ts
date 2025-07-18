@@ -14,7 +14,7 @@ import { PokemonSearch } from '../pokemon-search/pokemon-search';
 export class SearchBar {
   constructor(private pokemonService: PokemonService) {}
 
-  data: any;
+  data: any = null;
   searchTerm: string = '';
   result: string = '';
   isError: boolean = false;

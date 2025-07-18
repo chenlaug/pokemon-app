@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './pokemon-search.css',
 })
 export class PokemonSearch {
-  @Input() pokemonName: any = '';
+  @Input() pokemonName: string = '';
+  @Input() pokemonSpriteUrl: string = '';
 }

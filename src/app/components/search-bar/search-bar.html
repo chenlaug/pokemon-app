@@ -12,4 +12,9 @@
     {{ result }}
   </p>
 </div>
-<app-pokemon-search [pokemonName]="data.name" />
+@if (data) {
+<app-pokemon-search
+  [pokemonName]="data.name"
+  [pokemonSpriteUrl]="data.sprites.back_default"
+/>
+}
