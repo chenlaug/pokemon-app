@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-secondary-navbar',
+  standalone: true,
   imports: [RouterLink],
   templateUrl: './secondary-navbar.html',
   styleUrl: './secondary-navbar.css',
