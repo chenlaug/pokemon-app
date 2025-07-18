@@ -7,3 +7,9 @@
   />
   <button type="submit" (click)="getPokemonByName(searchTerm)">🔍</button>
 </div>
+<div class="result-container">
+  <p [ngClass]="{ error: isError, success: !isError }" class="results">
+    {{ result }}
+  </p>
+</div>
+<app-pokemon-search [pokemonName]="data.name" />

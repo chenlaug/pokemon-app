@@ -28,3 +28,24 @@
 .search-bar button:hover {
   background-color: #303f9f;
 }
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.results {
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+}

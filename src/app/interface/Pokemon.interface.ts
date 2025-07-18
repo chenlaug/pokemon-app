@@ -1,1 +1,3 @@
-export interface Ipokemon {}
+export interface Ipokemon {
+  name: string;
+}
