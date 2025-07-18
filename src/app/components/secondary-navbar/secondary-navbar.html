@@ -1,0 +1,9 @@
+<nav class="secondary-navbar">
+  <div class="nav-links">
+    @for (route of routerlink; track route.id) {
+    <a [routerLink]="route.path" class="nav-link">
+      {{ route.name }}
+    </a>
+    }
+  </div>
+</nav>

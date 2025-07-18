@@ -1,0 +1,9 @@
+<nav class="main-navbar">
+  <h1 class="title-main-navbar">PokéDex Angular</h1>
+  <div class="router-list">
+    @for (route of routerlink; track route.id) {
+    <a routerLink="{`{{ route.path }}`}" class="nav-link">{{ route.name }}</a>
+    }
+  </div>
+</nav>
+<app-secondary-navbar/>
